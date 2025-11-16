@@ -89,8 +89,8 @@ def checktie(board):
 #switch the player
 def switchplayer():
     global currentplayer
-    if  currentplayer == "X":
-        currentplayer= "O"
+    if  currentplayer =="X":
+        currentplayer = "O"
     else :
         currentplayer="X"   
 
@@ -100,8 +100,8 @@ def computer(board):
      position = random.randint(0, 8)
      if board[position] == "-":
          board[position] = "O"
-         break
          switchplayer()
+         break
 
 
 #check for win or tie again
